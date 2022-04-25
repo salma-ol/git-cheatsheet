@@ -39,11 +39,14 @@ git push -u origin main
 `git branch <branch-name>` Creates a new branch    
 `git checkout <branch-name>` Switchs to the indicated branch    
 `git checkout -b <branch-name>` Creates and checkouts to the indicated branch    
+`git checkout -` Returns to the previous checked-out branch (works with commits too)     
 `git fetch origin  :<branch-name>` Creates the branch in the local repository. The left side of the refspec was left empty.   
+### Merge
+`git merge <branch-name>` Merges the branch to current checked-out branch    
 ## Remote branches
 ### Delete 
 `git push origin  :<branch-name>` Deletes the branch in the remote repository. The left side of the refspec was left empty.   
 ### Remote tracking  
 `git checkout -b <new-branch> origin/main` Creates a new branch, checkout on it and defines main as the tracked branch.   
 `git branch -u origin/<trackedBranch> <branch-name>` Makes an existing branck track origin/trackedBranch.   
-git`git branch -u origin/<trackedBranch>` Makes the current branch track origin/trackedBranch.    
+`git branch -u origin/<trackedBranch>` Makes the current branch track origin/trackedBranch.    
