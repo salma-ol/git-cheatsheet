@@ -2,7 +2,7 @@
 ## Set up 
 `git config --global user.name "John Doe"`      
 `git config --global user.email johndoe@example.com`     
-`git config --global user.password password`
+`git config --global user.password password`     
 `git config --global core.editor "code --wait"` Changes git's editor to vscode   
 Create a new repository on the command line
 ```
@@ -52,7 +52,7 @@ git push -u origin main
 ### Rebase 
 `git rebase <branch-name>` Merges the current checked-out branch to the branch ?? a verifier en pratique c 'est comme merge
 ### Branch forcing 
-`git branch -f <branch-name> HEAD~<num> | git branch -f <branch-name> <commit-hash>` Force the reassignment of branch-name to a commit.     
+`git branch -f <branch-name> HEAD~<num>|<commit-hash>` Force the reassignment of branch-name togit  a commit.     
 ## Remote branches
 ### Delete 
 `git push origin  :<branch-name>` Deletes the branch in the remote repository. The left side of the refspec was left empty.   
