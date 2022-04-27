@@ -38,8 +38,9 @@ git push -u origin main
 `git push origin <source>:<destination>` = refspec. Specifies the source of the commits and their destination. Creates the destination branch if it doesn't exist.   
 *Example*: `git push origin main^:side` the commits of main^ will be added to the remote branch side.  
 ## Fetch
+`git fetch` Fetches data from the remote repo and updates the origin/branch-name branch
 ### Fetch arguments
-`git fetch origin <place>` Goes to the remote branch place, retrieves the not present local commits and copies them in the local branch origin/place.    
+`git fetch origin <place>` Downloads the commits that are missing from our local repo and updates where our remote branches point.   
 ## Branches 
 ### Add/Create
 `git branch <branch-name>` Creates a new branch    
